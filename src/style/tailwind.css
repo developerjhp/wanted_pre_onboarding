@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .menu {
+    @apply inline-block text-[14px] tablet:text-[13px] desktop:text-[14px] h-[inherit];
+  }
+
+  .menu a {
+    @apply leading-[20px] pt-[11px] pb-[19px] px-[10px] inline-block relative align-middle laptop:py-[15px] laptop:px-0 desktop:p-[15px];
+  }
+
+  .mobile_aside {
+    @apply relative inline-block h-full align-middle;
+  }
+
+  .sort {
+    @apply flex items-center justify-between;
+  }
+
+  .center {
+    @apply flex items-center justify-center;
+  }
+}
+
+.sign_up_button {
+  @apply px-[14px] text-sm text-[#36f] h-[34px] leading-8 border-[#36f] border rounded-full;
+}
+
+.dashboard_button::before {
+  @apply block m-[10px] bg-[#e1e2e3] content-[""] w-[1px];
+}
+
+.dashboard_button {
+  @apply laptop:inline-flex laptop:relative laptop:align-middle laptop:h-full;
+}
+
+.dashboard_button a {
+  @apply leading-[30px] h-[30px] border border-[#e1e2e3] text-[#666] font-normal inline-block px-[10px] text-[13px] rounded-full;
+}
+
+.profile {
+  @apply w-[32px] h-[32px] rounded-full center overflow-hidden border border-[#e1e2e3] bg-white;
+}
+
+.arrow_button {
+  @apply hidden desktop:center opacity-50 rounded-[15px] bg-white text-[16px] desktop:absolute w-[30px] h-[60px] top-[120px];
+}
+
+.left_arrow {
+  left: calc((100% - 1210px) / 2);
+}
+
+.right_arrow {
+  right: calc((100% - 1210px) / 2);
+}

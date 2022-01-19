@@ -1,14 +1,16 @@
-import { Carousel } from './components/Carousel/Carousel';
-import { Navbar } from './components/Navbar/Navbar';
-import './style/global-style.css';
+import React from 'react';
+import Carousel from './components/Carousel';
+import Navbar from './components/Navbar';
+import './style/tailwind.css';
 
-function App() {
+const App = () => {
   return (
     <>
       <Navbar />
+      <div className='h-[110px] laptop:h-[50px]' />
       <Carousel />
     </>
   );
-}
+};
 
 export default App;
